@@ -1,0 +1,44 @@
+[
+    {
+        "responsable": "maria.gomez@example.com",
+        "descripcion": "Crear base de datos en MongoDB",
+        "habilidades": ["MongoDB", "Mongoose", "NoSQL"],
+        "segmentos": 8,
+        "colaboradores": []
+    },
+    {
+        "responsable": "carlos.rodriguez@example.com",
+        "descripcion": "Optimizar consultas en PostgreSQL",
+        "habilidades": ["PostgreSQL", "SQL", "Optimización"],
+        "segmentos": 12,
+        "colaboradores": ["juan.martinez@example.com"]
+    },
+    {
+        "responsable": "ana.lopez@example.com",
+        "descripcion": "Diseñar interfaz con React",
+        "habilidades": ["React", "CSS", "HTML"],
+        "segmentos": 15,
+        "colaboradores": ["sofia.garcia@example.com", "carlos.rodriguez@example.com"]
+    },
+    {
+        "responsable": "juan.martinez@example.com",
+        "descripcion": "Implementar API con Spring Boot",
+        "habilidades": ["Java", "Spring Boot", "REST"],
+        "segmentos": 10,
+        "colaboradores": []
+    },
+    {
+        "responsable": "sofia.garcia@example.com",
+        "descripcion": "Desarrollar componentes en Angular",
+        "habilidades": ["Angular", "TypeScript", "UI/UX"],
+        "segmentos": 20,
+        "colaboradores": ["maria.gomez@example.com"]
+    },
+    {
+        "responsable": "sofia.garcia@example.com",
+        "descripcion": "Tutorial de Node.js",
+        "habilidades": ["Node.js"],
+        "segmentos": 1,
+        "colaboradores": ["antonio.sanchez@example.es"]
+    }
+]

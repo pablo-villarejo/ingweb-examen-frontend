@@ -1,0 +1,32 @@
+[
+    {
+        "email": "maria.gomez@example.com",
+        "nombre": "María Gómez",
+        "habilidades": ["JavaScript", "Node.js", "MongoDB"]
+    },
+    {
+        "email": "carlos.rodriguez@example.com",
+        "nombre": "Carlos Rodríguez",
+        "habilidades": ["Python", "Django", "PostgreSQL"]
+    },
+    {
+        "email": "ana.lopez@example.com",
+        "nombre": "Ana López",
+        "habilidades": ["HTML", "CSS", "React"]
+    },
+    {
+        "email": "juan.martinez@example.com",
+        "nombre": "Juan Martínez",
+        "habilidades": ["Java", "Spring Boot", "MySQL"]
+    },
+    {
+        "email": "sofia.garcia@example.com",
+        "nombre": "Sofía García",
+        "habilidades": ["Angular", "TypeScript", "Git"]
+    },
+    {
+        "email": "jose.antonio@example.com",
+        "nombre": "Jose Antonio",
+        "habilidades": ["UML", "USE"]
+    }
+]
