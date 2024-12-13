@@ -101,7 +101,7 @@ const findLocation = async () => {
         class="p-2 border rounded w-full mb-2"
       />
       <button @click="findLocation" class="p-2 bg-blue-500 text-white rounded">
-        Search
+        Searchhhhhh
       </button>
     </div>
     <div class="flex  items-center space-y-4 md:w-1/3 w-full">
