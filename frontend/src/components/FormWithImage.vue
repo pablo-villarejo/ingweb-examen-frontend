@@ -87,7 +87,7 @@ async function submitForm() {
 
   try {
     // Hacer una petición POST para añadir el marcador
-    const response = await axios.post('http://localhost:3001/api/map/user@example.com/markers', markerData);
+    const response = await axios.post('/api/map/user@example.com/markers', markerData);
 
 
     // Manejar la respuesta del servidor

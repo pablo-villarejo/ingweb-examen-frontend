@@ -49,7 +49,7 @@
     methods: {
       async fetchMapData() {
         try {
-            const response = await axios.get(`http://localhost:3001/api/map/${this.email}`);
+            const response = await axios.get(`/api/map/${this.email}`);
             console.log('Response:', response.data.markers);
           if (response.data) {
             this.markers = response.data.markers;

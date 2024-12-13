@@ -27,6 +27,7 @@ const submitEmail = () => {
       </button>
     </form>
 
+    
     <!-- Mapa dinámico -->
     <UserMapComponent :email="email" width="100%" height="500px" v-if="email" />
   </div>
