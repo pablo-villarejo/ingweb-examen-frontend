@@ -3,11 +3,15 @@ import { ref } from 'vue';
 import UserMapComponent from '@/components/UserMapComponent.vue';
 
 const email = ref(''); // El correo electrónico introducido por el usuario
+const isSubmitted = ref(false); // Estado para controlar si el formulario fue enviado
+
 const submitEmail = () => {
   if (email.value) {
     alert(`Intentando cargar el mapa del usuario con email: ${email.value}`);
+    isSubmitted.value = true; // Marca como enviado el formulario
   } else {
     alert("Por favor, introduce un email.");
+    isSubmitted.value = false;
   }
 };
 </script>
@@ -31,8 +35,8 @@ const submitEmail = () => {
       </button>
     </form>
 
-    <!-- Mapa dinámico -->
-    <UserMapComponent :email="email" width="100%" height="500px" v-if="email" />
+    <!-- Mapa dinámico solo si se ha enviado el formulario -->
+    <UserMapComponent :email="email" width="100%" height="500px" v-if="isSubmitted" />
   </div>
 </template>
 
