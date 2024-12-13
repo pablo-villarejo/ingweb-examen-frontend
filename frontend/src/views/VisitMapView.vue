@@ -4,7 +4,11 @@ import UserMapComponent from '@/components/UserMapComponent.vue';
 
 const email = ref(''); // El correo electrónico introducido por el usuario
 const submitEmail = () => {
-  alert(`Intentando cargar el mapa del usuario con email: ${email.value}`);
+  if (email.value) {
+    alert(`Intentando cargar el mapa del usuario con email: ${email.value}`);
+  } else {
+    alert("Por favor, introduce un email.");
+  }
 };
 </script>
 
@@ -27,7 +31,6 @@ const submitEmail = () => {
       </button>
     </form>
 
-    
     <!-- Mapa dinámico -->
     <UserMapComponent :email="email" width="100%" height="500px" v-if="email" />
   </div>
