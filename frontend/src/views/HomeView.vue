@@ -62,7 +62,7 @@ const findLocation = async () => {
         console.log(`Address found: ${display_name}, Lat: ${lat}, Lon: ${lon}`);
 
         // Update the map view
-        map.value.setView([lat, lon], 15);
+        map.value.setView([lat, lon], 10);
 
         // Add or update marker on the map
         if (marker.value) {
@@ -101,7 +101,7 @@ const findLocation = async () => {
         class="p-2 border rounded w-full mb-2"
       />
       <button @click="findLocation" class="p-2 bg-blue-500 text-white rounded">
-        Searchhhhhh
+        Search
       </button>
     </div>
     <div class="flex  items-center space-y-4 md:w-1/3 w-full">

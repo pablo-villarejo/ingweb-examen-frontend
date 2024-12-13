@@ -12,6 +12,7 @@ const MONGO_URI= process.env.MONGO_URI || "mongodb://admin:admin@localhost:27017
 const colaboradorRouter = require('./src/routes/colaboradorRouter')
 const tareaRouter = require('./src/routes/tareaRouter')
 const cloudinaryRouter = require('./src/routes/cloudinaryRouter');
+const mapRouter = require('./src/routes/mapRouter')
 
 const seedingRouter = require('./src/routes/seedingRouter')
 
@@ -20,6 +21,7 @@ app.use(cors());
 app.use('/api/cloudinary', cloudinaryRouter)
 app.use('/api/colaboradores', colaboradorRouter)
 app.use('/api/tareas', tareaRouter)
+app.use('/api/map', mapRouter)
 
 app.use('/seeding', seedingRouter)
 

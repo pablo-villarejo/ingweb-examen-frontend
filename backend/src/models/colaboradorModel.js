@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-// Esquema para los colaboradores
+// Esquema para los 
 const colaboradorSchema = new mongoose.Schema({
     email: {
         type: String,

@@ -1,23 +1,54 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from 'vue-router';
+import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
-  <header class="bg-green-500">
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <header class="bg-blue-500 flex items-center justify-between p-4">
+    <!-- Logo y título -->
+    <div class="flex items-center space-x-4">
+        <img 
+            alt="Mapa logo" 
+            class="logo" 
+            src="@/assets/logo.svg" 
+            width="100" 
+            height="100" 
+        />
+        <h1 class="text-white text-2xl font-bold">MiMapa</h1>
     </div>
-  </header>
+    <div>
+    <!-- Navegación -->
+    <nav class="flex space-x-8"> <!-- Cambiado el espacio entre elementos -->
+        <RouterLink 
+            to="/" 
+            class="text-white hover:text-blue-300 font-medium"
+        >
+            Inicio
+        </RouterLink>
+        <RouterLink 
+            to="/add-marker" 
+            class="text-white hover:text-blue-300 font-medium"
+        >
+            Añadir Marcador
+        </RouterLink>
+        <RouterLink 
+            to="/my-map" 
+            class="text-white hover:text-blue-300 font-medium"
+        >
+            Mi Mapa
+        </RouterLink>
+        <RouterLink 
+            to="/visit-map" 
+            class="text-white hover:text-blue-300 font-medium"
+        >
+            Visitar Mapa
+        </RouterLink>
+    </nav>
+  </div>
+</header>
 
-  <RouterView />
+<!-- Usamos el key en RouterView para forzar el reinicio del componente cuando cambia la ruta -->
+<RouterView :key="$route.fullPath" />
 </template>
 
 <style scoped>
@@ -77,7 +108,6 @@ nav a:first-of-type {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
   }
